@@ -8,8 +8,8 @@ const Store = () => {
   const [data, setData] = useState<CategoryItemType[]|null>(null);
 
   useEffect(() => {
-    axios.get(`http://localhost:3000/data_test.json`)
-    //axios.get(`https://cryptic-badlands-15292.herokuapp.com/getData`)
+    //axios.get(`http://localhost:3000/data_test.json`)
+    axios.get(`https://cryptic-badlands-15292.herokuapp.com/getData`)
     .then(res => {
       const store: CategoryItemType[] = res.data;
       setData(store);
