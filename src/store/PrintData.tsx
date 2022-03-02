@@ -56,7 +56,7 @@ const PrintData = ( props: {
           <tr className="item" key={index}>
             <td>{item.name}</td>
             <td>{item.category}</td>
-            <td>{item.subCategory}</td>
+            <td>{item.subCategory ? item.subCategory : 'None'}</td>
             <td>{item.description}</td>
             <td><img src={decodeURI(item.image)} /></td>
             <td>{item.price}</td>
